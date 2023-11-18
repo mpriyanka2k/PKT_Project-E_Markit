@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="black1">#322F2F</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white1">#C1BEBE</color>
+    <color name="white2">#F6F8F9</color>
+    <color name="Lightest2">#BDBDBD</color>
+    <color name="Lightest3">#515050</color>
+
+    <color name="tablayout">#F5F5F5</color>
+    <color name="tablayout_unselected_text">#939796</color>
+
+
+    <color name="btn_Color">#ff00</color>
+    <color name="light_pink1">#FFF1F1</color>
+
+    <color name="light_green">#EFFEFC</color> //For pending
+    <color name="light_pink">#FFF7E8</color>  //for completed
+    <color name="light_red">#FFEAEA</color>   //for cancelled
+
+
+    <color name="light_green_text">#1FD9CA</color> //For pending
+    <color name="light_pink_text">#FFBE4E</color>  //for completed
+    <color name="light_red_text">#FE6C6E</color>   //for cancelled
+
+</resources>

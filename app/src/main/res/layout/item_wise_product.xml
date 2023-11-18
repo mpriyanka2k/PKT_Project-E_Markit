@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.pkt.emarkit.ui.viewBinders.ItemWiseProductBinder" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/product_img"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                tools:src="@drawable/cancle_btn_background"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_name"
+                    tools:text="Pista Irani - Regular"
+                    android:text="@={model.product_name}"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/product_item"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    tools:text="1 KG"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:text="@={model.weight}"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16sp" />-->
+
+<LinearLayout
+    android:layout_marginTop="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+
+    >
+
+    <TextView
+        android:id="@+id/product_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="1 "
+        android:textStyle="bold"
+        android:text="@={model.weight}"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/product_item_uom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        tools:text="KG"
+        android:textStyle="bold"
+        android:text="@={model.uom}"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/qty_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Qty :"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        tools:text="10"
+                        android:textStyle="bold"
+                        android:text="@={model.qty}"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    tools:text="Jayshree dry fruit"
+                    android:text="@={model.name}"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#5A728A"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#DCE5F2" />
+    </LinearLayout>
+
+</layout>
